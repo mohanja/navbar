@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(7, 7, 7);
+    width: 100%;
+height: 10vh;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+   /* padding-bottom:10px; */
+}
+
+header nav .logo{
+    margin-top: 5px;
+ text-transform: capitalize;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+}
+
+header nav .logo .fist{
+    color: rgb(12, 188, 12);
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1.1px;
+}
+header nav .logo .two{
+    margin-top: 12px;
+    color: rgb(248, 249, 248);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1.1px;
+}
+
+header nav ul{
+    margin-top: 10px;
+}
+
+
+header nav ul li{
+    position: relative;
+ text-transform: capitalize;
+display: inline;
+list-style: none;
+font-size: 1.2rem;
+margin-left: 24px;
+}
+header nav ul li a{
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: rgb(249, 248, 248);
+    font-weight: 700;
+}
+
+header nav ul li a::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(12, 188, 12);
+    bottom: -8px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+transform-origin:right ;
+}
+header nav ul li a:hover::before{
+    transform: scale(1);
+    transform-origin: left;
+    color: rgb(12, 188, 12);
+    transition: 0.5s;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+   
+    background: url("https://images8.alphacoders.com/109/thumb-1920-1092394.jpg")top/cover no-repeat;   
+}
+.title{
+    display: flex;
+    padding-left: 15%;
+padding-top: 10%;
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+   background-color: rgba(255, 255, 255, 0.253);
+    margin: 0 auto;
+}
+.name{
+    display: flex;
+    gap: 10px;
+    font-size: 5rem;
+    font-weight: bold;
+}
+p{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    padding-left: 4px;
+}
+button{
+    font-weight: bold;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-top: 40px;
+    border: 3px solid;
+    border-radius: 10px;
+    border-color:rgb(12, 188, 12) ;
+    background-color: rgba(255, 255, 255, 0.436);
+}
+button:hover{
+    background-color:rgb(12, 188, 12) ;
+    color: white;
+}
